@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mighty Nexus</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+            h1 {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+                font-size: 1.8em;
+                padding: 0 0 0 15px;
+            }
+            
+            p {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+            }
+            
+            .subHead {
+                color: #0e355a;    
+            }
+            
+            button {
+                background-color: #e0ddde;
+                border: none;
+                color: #0e355a;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-family: CenturyGothic, sans-serif;
+                font-weight: normal;
+                font-size: 1.8em;
+                width: 45%;
+                height: 90px;
+                margin: 5px;
+                background-repeat: no-repeat;
+            }
+            
+            button:hover {
+                background-color: #353535;
+                color: white;
+            }
+            
+            #abathurBtn {
+                background-image: url("Resources/specialists/abathur/abathur_small.png");
+            }
+            
+            #azmodanBtn {
+                background-image: url("Resources/specialists/azmodan/azmodan_small.png");
+            }
+            
+            #gazloweBtn {
+                background-image: url("Resources/specialists/gazlowe/gazlowe_small.png");
+            }
+            
+            #medivhBtn {
+                background-image: url("Resources/specialists/medivh/medivh_small.png");    
+            }
+            
+            #murkyBtn {
+                background-image: url(Resources/specialists/murky/murky_small.png);
+            }
+            
+            #nazeeboBtn {
+                background-image: url(Resources/specialists/nazeebo/nazeebo_small.png);
+            }
+            
+            #probiusBtn {
+                background-image: url(Resources/specialists/probius/probius_small.png);
+            }
+            
+            #sgthammerBtn {
+                background-image: url(Resources/specialists/sgthammer/sgthammer_small.png);
+            }
+            
+            #sylvanasBtn {
+                background-image: url(Resources/specialists/sylvanas/sylvanas_small.png);
+            }
+            
+            #thelostvikingsBtn {
+                background-image: url(Resources/specialists/thelostvikings/thelostvikings_small.png);
+            }
+            
+            #xulBtn {
+                background-image: url(Resources/specialists/xul/xul_small.png);
+            }
+            
+            #zagaraBtn {
+                background-image: url(Resources/specialists/zagara/zagara_small.png);
+            }
+            
+            /* Responsive Page - Resize buttons and remove image */
+            @media screen and (max-width: 800px){
+                button {
+                    height: 50px;
+                    background-image: none;
+                    font-size: 1em;
+                }
+                
+                #abathurBtn, #azmodanBtn, #gazloweBtn, #medivhBtn, #murkyBtn, #nazeeboBtn, #probiusBtn, #sgthammerBtn, #sylvanasBtn, #thelostvikingsBtn, #xulBtn, #zagaraBtn {
+                    background-image: none;
+                }
+            }
+            
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="resources/logos/mn_smallLogo.png" /></a>
+    </header>
+<div id="wrapper">
+    <nav>
+        <ul id="myTopnav">
+            <li><a href="warriors.html">Warriors</a></li>
+            <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="specialists.html">Specialists</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Specialists</h1>
+        <p>Specialist heroes do various things that aren't covered by other roles. Specialists can be siege heroes that do massive damage to enemy bases and towers, but some can have completely different effects on the flow of battles.</p>
+        <br />
+        <p class="subHead">Click on a specialist hero for our recommended talents and strategies.</p>
+        
+        <div class="heroes">
+            <!-- Abathur -->
+            <button id="abathurBtn" onclick="abathurBuild()">
+                Abathur
+            </button>
+            
+            <!-- Azmodan -->
+            <button id="azmodanBtn" onclick="azmodanBuild()">
+                Azmodan
+            </button>
+            
+            <!-- Gazlowe -->
+            <button id="gazloweBtn" onclick="gazloweBuild()">
+                Gazlowe
+            </button>
+            
+            <!-- Medivh -->
+            <button id="medivhBtn" onclick="medivhBuild()">
+                Medivh
+            </button>
+            
+            <!-- Murky -->
+            <button id="murkyBtn" onclick="murkyBuild()">
+                Murky
+            </button>
+            
+            <!-- Nazeebo -->
+            <button id="nazeeboBtn" onclick="nazeeboBuild()">
+                Nazeebo
+            </button>
+            
+            <!-- Probius -->
+            <button id="probiusBtn" onclick="probiusBuild()">
+                Probius
+            </button>
+            
+            <!-- Sgt. Hammer -->
+            <button id="sgthammerBtn" onclick="sgthammerBuild()">
+                Sgt. Hammer
+            </button>
+            
+            <!-- Sylvanas -->
+            <button id="sylvanasBtn" onclick="sylvanasBuild()">
+                Sylvanas
+            </button>
+            
+            <!-- The Lost Vikings -->
+            <button id="thelostvikingsBtn" onclick="thelostvikingsBuild()">
+                The Lost Vikings
+            </button>
+            
+            <!-- Xul -->
+            <button id="xulBtn" onclick="xulBuild()">
+                Xul
+            </button>
+            
+            <!-- Zagara -->
+            <button id="zagaraBtn" onclick="zagaraBuild()">
+                Zagara
+            </button>
+        </div>
+        <br />
+        
+        <!-- Buttons Script -->
+        <script>
+            
+            function abathurBuild(btn) {
+               window.location.href = "specialists/abathur.html";
+            }
+            
+            
+            function azmodanBuild(btn){
+               window.location.href = "specialists/azmodan.html";
+            }
+            
+            function gazloweBuild(btn) {
+                window.location.href = "specialists/gazlowe.html";
+            }
+            
+            function medivhBuild(btn) {
+                window.location.href = "specialists/medivh.html";    
+            }
+            
+            function murkyBuild(btn) {
+                window.location.href = "specialists/murky.html";
+            }
+            
+            function nazeeboBuild(btn) {
+                window.location.href = "specialists/nazeebo.html";
+            }
+            
+            function probiusBuild(btn) {
+                window.location.href = "specialists/probius.html";
+            }
+            
+            function sgthammerBuild(btn) {
+                window.location.href = "specialists/sgthammer.html";
+            }
+            
+            function sylvanasBuild(btn) {
+                window.location.href = "specialists/sylvanas.html";
+            }
+            
+            function thelostvikingsBuild(btn) {
+                window.location.href = "specialists/thelostvikings.html";
+            }
+            
+            function xulBuild(btn) {
+                window.location.href = "specialists/xul.html";
+            }
+            
+            function zagaraBuild(btn) {
+                window.location.href = "specialists/zagara.html";
+            }
+        </script>
+        
+
+    </main>
+    <footer>
+        <p>&copy; Copyright Mighty Nexus</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mighty Nexus</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+            h1 {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+                font-size: 1.8em;
+                padding: 0 0 0 15px;
+            }
+            
+            p {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+            }
+            
+            .subHead {
+                color: #0e355a;    
+            }
+            
+            button {
+                background-color: #e0ddde;
+                border: none;
+                color: #0e355a;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-family: CenturyGothic, sans-serif;
+                font-weight: normal;
+                font-size: 1.8em;
+                width: 45%;
+                height: 90px;
+                margin: 5px;
+                background-image: url("Resources/warriors/anub'arak/anub'arak_small.png");
+                background-repeat: no-repeat;
+            }
+            
+            button:hover {
+                background-color: #353535;
+                color: white;
+            }
+            
+            #artanisBtn {
+                background-image: url("Resources/warriors/artanis/artanis_small.png");
+            }
+            
+            #arthasBtn {
+                background-image: url("Resources/warriors/arthas/arthas_small.png");
+            }
+            
+            #chenBtn {
+                background-image: url("Resources/warriors/chen/chen_small.png");
+            }
+            
+            #choBtn {
+                background-image: url("Resources/warriors/cho/cho_small.png");    
+            }
+            
+            #dehakaBtn {
+                background-image: url(Resources/warriors/dehaka/dehaka_small.png);
+            }
+            
+            #diabloBtn {
+                background-image: url(Resources/warriors/diablo/diablo_small.png);
+            }
+            
+            #etcBtn {
+                background-image: url(Resources/warriors/etc/etc_small.png);
+            }
+            
+            #johannaBtn {
+                background-image: url(Resources/warriors/johanna/johanna_small.png);
+            }
+            
+            #leoricBtn {
+                background-image: url(Resources/warriors/leoric/leoric_small.png);
+            }
+            
+            #muradinBtn {
+                background-image: url(Resources/warriors/muradin/muradin_small.png);
+            }
+            
+            #rexxarBtn {
+                background-image: url(Resources/warriors/rexxar/rexxar_small.png);
+            }
+            
+            #sonyaBtn {
+                background-image: url(Resources/warriors/sonya/sonya_small.png);
+            }
+            
+            #stitchesBtn {
+                background-image: url(Resources/warriors/stitches/stitches_small.png);
+            }
+            
+            #tyraelBtn {
+                background-image: url(Resources/warriors/tyrael/tyrael_small.png);
+            }
+            
+            #varianBtn {
+                background-image: url(Resources/warriors/varian/varian_small.png);
+            }
+            
+            #zaryaBtn {
+                background-image: url(Resources/warriors/zarya/zarya_small.png);
+            }
+            
+            /* Responsive Page - Resize buttons and remove image */
+            @media screen and (max-width: 800px){
+                button {
+                    height: 50px;
+                    background-image: none;
+                    font-size: 1em;
+                }
+                
+                #artanisBtn, #arthasBtn, #chenBtn, #choBtn, #dehakaBtn, #diabloBtn, #etcBtn, #johannaBtn, #leoricBtn, #muradinBtn, #rexxarBtn, #sonyaBtn, #stitchesBtn, #tyraelBtn, #varianBtn, #zaryaBtn {
+                    background-image: none;
+                }
+                
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="resources/logos/mn_smallLogo.png" /></a>
+    </header>
+<div id="wrapper">
+    <nav>
+        <ul id="myTopnav">
+            <li><a href="warriors.html">Warriors</a></li>
+            <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="specialists.html">Specialists</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Warriors</h1>
+        <p>Warriors can dive right into melee, soaking up damage and dealing it back.</p>
+        <br />
+        <p class="subHead">Click on a warrior hero for our recommended talents and strategies.</p>
+        
+        <div class="heroes">
+            <!-- Anub'arak -->
+            <button onclick="anubBuild()">
+                Anub'arak
+            </button>
+            
+            <!-- Artanis -->
+            <button id="artanisBtn" onclick="artanisBuild()">
+                Artanis
+            </button>
+            
+            <!-- Arthas -->
+            <button id="arthasBtn" onclick="arthasBuild()">
+                Arthas
+            </button>
+            
+            <!-- Chen -->
+            <button id="chenBtn" onclick="chenBuild()">
+                Chen
+            </button>
+            
+            <!-- Cho -->
+            <button id="choBtn" onclick="choBuild()">
+                Cho
+            </button>
+            
+            <!-- Dehaka -->
+            <button id="dehakaBtn" onclick="dehakaBuild()">
+                Dehaka
+            </button>
+            
+            <!-- Diablo -->
+            <button id="diabloBtn" onclick="diabloBuild()">
+                Diablo
+            </button>
+            
+            <!-- ETC -->
+            <button id="etcBtn" onclick="etcBuild()">
+                E.T.C
+            </button>
+            
+            <!-- Johanna -->
+            <button id="johannaBtn" onclick="johannaBuild()">
+                Johanna
+            </button>
+            
+            <!-- Leoric -->
+            <button id="leoricBtn" onclick="leoricBuild()">
+                Leoric
+            </button>
+            
+            <!-- Muradin -->
+            <button id="muradinBtn" onclick="muradinBuild()">
+                Muradin
+            </button>
+            
+            <!-- Rexxar -->
+            <button id="rexxarBtn" onclick="rexxarBuild()">
+                Rexxar
+            </button>
+            
+            <!-- Sonya -->
+            <button id="sonyaBtn" onclick="sonyaBuild()">
+                Sonya
+            </button>
+            
+            <!-- Stitches -->
+            <button id="stitchesBtn" onclick="stitchesBuild()">
+                Stitches
+            </butoon>
+            
+            <!-- Tyrael -->
+            <button id="tyraelBtn" onclick="tyraelBuild()">
+                Tyrael
+            </button>
+            
+            <!-- Varian -->
+            <button id="varianBtn" onclick="varianBuild()">
+                Varian
+            </button>
+            
+            <!-- Zarya -->
+            <button id="zaryaBtn" onclick="zaryaBuild()">
+                Zarya
+            </button>
+        </div>
+        <br />
+        
+        <!-- Buttons Script -->
+        <script>
+            
+            function anubBuild(btn) {
+               window.location.href = "warriors/anubarak.html";
+            }
+            
+            
+            function artanisBuild(btn){
+               window.location.href = "warriors/artanis.html";
+            }
+            
+            function arthasBuild(btn) {
+                window.location.href = "warriors/arthas.html";
+            }
+            
+            function chenBuild(btn) {
+                window.location.href = "warriors/chen.html";    
+            }
+            
+            function choBuild(btn) {
+                window.location.href = "warriors/cho.html";
+            }
+            
+            function dehakaBuild(btn) {
+                window.location.href = "warriors/dehaka.html";
+            }
+            
+            function diabloBuild(btn) {
+                window.location.href = "warriors/diablo.html";
+            }
+            
+            function etcBuild(btn) {
+                window.location.href = "warriors/etc.html";
+            }
+            
+            function johannaBuild(btn) {
+                window.location.href = "warriors/johanna.html";
+            }
+            
+            function leoricBuild(btn) {
+                window.location.href = "warriors/leoric.html";
+            }
+            
+            function muradinBuild(btn) {
+                window.location.href = "warriors/muradin.html";
+            }
+            
+            function rexxarBuild(btn) {
+                window.location.href = "warriors/rexxar.html";
+            }
+            
+            function sonyaBuild(btn) {
+                window.location.href = "warriors/sonya.html";
+            }
+            
+            function stitchesBuild(btn) {
+                window.location.href = "warriors/stitches.html";
+            }
+            
+            function tyraelBuild(btn) {
+                window.location.href = "warriors/tyrael.html";
+            }
+            
+            function varianBuild(btn) {
+                window.location.href = "warriors/varian.html";
+            }
+            
+            function zaryaBuild(btn) {
+                window.location.href = "warriors/zarya.html";
+            }
+        </script>
+        
+
+    </main>
+    <footer>
+        <p>&copy; Copyright Mighty Nexus</p>
+    </footer>
+</div>
+</body>
+</html>

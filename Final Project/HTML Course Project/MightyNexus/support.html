@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mighty Nexus</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+            h1 {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+                font-size: 1.8em;
+                padding: 0 0 0 15px;
+            }
+            
+            p {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+            }
+            
+            .subHead {
+                color: #0e355a;    
+            }
+            
+            button {
+                background-color: #e0ddde;
+                border: none;
+                color: #0e355a;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-family: CenturyGothic, sans-serif;
+                font-weight: normal;
+                font-size: 1.8em;
+                width: 45%;
+                height: 90px;
+                margin: 5px;
+                background-repeat: no-repeat;
+            }
+            
+            button:hover {
+                background-color: #353535;
+                color: white;
+            }
+            
+            #aurielBtn {
+                background-image: url("Resources/support/auriel/auriel_small.png");
+            }
+            
+            #brightwingBtn {
+                background-image: url("Resources/support/brightwing/brightwing_small.png");
+            }
+            
+            #kharazimBtn {
+                background-image: url("Resources/support/kharazim/kharazim_small.png");
+            }
+            
+            #liliBtn {
+                background-image: url("Resources/support/lili/lili_small.png");    
+            }
+            
+            #ltmoralesBtn {
+                background-image: url(Resources/support/ltmorales/ltmorales_small.png);
+            }
+            
+            #lucioBtn {
+                background-image: url(Resources/support/lucio/lucio_small.png);
+            }
+            
+            #malfurionBtn {
+                background-image: url(Resources/support/malfurion/malfurion_small.png);
+            }
+            
+            #rehgarBtn {
+                background-image: url(Resources/support/rehgar/rehgar_small.png);
+            }
+            
+            #tassadarBtn {
+                background-image: url(Resources/support/tassadar/tassadar_small.png);
+            }
+            
+            #tyrandeBtn {
+                background-image: url(Resources/support/tyrande/tyrande_small.png);
+            }
+            
+            #utherBtn {
+                background-image: url(Resources/support/uther/uther_small.png);
+            }
+            
+            /* Responsive Page - Resize buttons and remove image */
+            @media screen and (max-width: 800px){
+                button {
+                    height: 50px;
+                    background-image: none;
+                    font-size: 1em;
+                }
+                
+                #aurielBtn, #brightwingBtn, #kharazimBtn, #liliBtn, #ltmoralesBtn, #lucioBtn, #malfurionBtn, #rehgarBtn, #tassadarBtn, #tyrandeBtn, #utherBtn {
+                    background-image: none;
+                }
+            }
+            
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="resources/logos/mn_smallLogo.png" /></a>
+    </header>
+<div id="wrapper">
+    <nav>
+        <ul id="myTopnav">
+            <li><a href="warriors.html">Warriors</a></li>
+            <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="specialists.html">Specialists</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Support</h1>
+        <p>Support heroes can swing the tide of battle, assisting with healing, buffs, or other abilities to manipulate the battle in the favor of allies.</p>
+        <br />
+        <p class="subHead">Click on a support hero for our recommended talents and strategies.</p>
+        
+        <div class="heroes">
+            <!-- Auriel -->
+            <button id="aurielBtn" onclick="aurielBuild()">
+                Auriel
+            </button>
+            
+            <!-- Brightwing -->
+            <button id="brightwingBtn" onclick="brightwingBuild()">
+                Brightwing
+            </button>
+            
+            <!-- Kharazim -->
+            <button id="kharazimBtn" onclick="kharazimBuild()">
+                Kharazim
+            </button>
+            
+            <!-- Li Li -->
+            <button id="liliBtn" onclick="liliBuild()">
+                Li Li
+            </button>
+            
+            <!-- Lt. Morales -->
+            <button id="ltmoralesBtn" onclick="ltmoralesBuild()">
+                Lt. Morales
+            </button>
+            
+            <!-- Lucio -->
+            <button id="lucioBtn" onclick="lucioBuild()">
+                Lucio
+            </button>
+            
+            <!-- Malfurion -->
+            <button id="malfurionBtn" onclick="malfurionBuild()">
+                Malfurion
+            </button>
+            
+            <!-- Rehgar -->
+            <button id="rehgarBtn" onclick="rehgarBuild()">
+                Rehgar
+            </button>
+            
+            <!-- Tassadar -->
+            <button id="tassadarBtn" onclick="tassadarBuild()">
+                Tassadar
+            </button>
+            
+            <!-- Tyrande -->
+            <button id="tyrandeBtn" onclick="tyrandeBuild()">
+                Tyrande
+            </button>
+            
+            <!-- Uther -->
+            <button id="utherBtn" onclick="utherBuild()">
+                Uther
+            </button>
+            
+        </div>
+        <br />
+        
+        <!-- Buttons Script -->
+        <script>
+            
+            function aurielBuild(btn) {
+               window.location.href = "support/auriel.html";
+            }
+            
+            
+            function brightwingBuild(btn){
+               window.location.href = "support/brightwing.html";
+            }
+            
+            function kharazimBuild(btn) {
+                window.location.href = "support/kharazim.html";
+            }
+            
+            function liliBuild(btn) {
+                window.location.href = "support/lili.html";    
+            }
+            
+            function ltmoralesBuild(btn) {
+                window.location.href = "support/ltmorales.html";
+            }
+            
+            function lucioBuild(btn) {
+                window.location.href = "support/lucio.html";
+            }
+            
+            function malfurionBuild(btn) {
+                window.location.href = "support/malfurion.html";
+            }
+            
+            function rehgarBuild(btn) {
+                window.location.href = "support/rehgar.html";
+            }
+            
+            function tassadarBuild(btn) {
+                window.location.href = "support/tassadar.html";
+            }
+            
+            function tyrandeBuild(btn) {
+                window.location.href = "support/tyrande.html";
+            }
+            
+            function utherBuild(btn) {
+                window.location.href = "support/uther.html";
+            }
+            
+        </script>
+        
+
+    </main>
+    <footer>
+        <p>&copy; Copyright Mighty Nexus</p>
+    </footer>
+</div>
+</body>
+</html>

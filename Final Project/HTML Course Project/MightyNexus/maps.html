@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mighty Nexus</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+            h1 {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+                font-size: 1.8em;
+                padding: 0 0 0 15px;
+            }
+            
+            p {
+                font-family: CenturyGothic, sans-serif;
+                color: #e6005c;
+                text-align: left;
+            }
+            
+            .subHead {
+                color: #0e355a;    
+            }
+            
+            h3 {
+                text-align: left;
+                padding-left: 15px;
+                color: white;
+            }
+            
+            .leftMap, .midMap, .rightMap {
+                display: inline-block;
+                background-color: #353535;
+                border-style: groove;
+                border-color: #360052;
+                border-width: thick;
+                width: 32%;
+                height: 450px;
+                margin-top: 8px;
+                padding-top: 10px;
+            }
+            
+            .leftMap {
+                float: left;
+            }
+            
+            .rightMap {
+                float: right;
+            }
+            
+            .bgImg {
+                width: 90%;
+            }
+            
+            .mapInfo {
+                color:azure;
+                font-size: 0.8em;
+            }
+            
+            .allMaps {
+                width: 100%;
+                padding-bottom: 30px;
+            }
+            
+            @media screen and (max-width: 1000px) {
+                .rightMap{
+                    float: none;
+                    margin-top: 15px;
+                    display: block;
+                    height: auto;
+                    width: auto;
+                }
+
+                .leftMap {
+                    float: none;
+                    margin-top: 15px;
+                    display: block;
+                    height: auto;
+                    width: auto;
+                }
+
+                .midMap {
+                    margin-top: 15px;
+                    display: block;
+                    height: auto;
+                    width: auto;
+                }
+                
+                .bgImg {
+                    display: none;
+                }
+                
+            }
+            
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="resources/logos/mn_smallLogo.png" /></a>
+    </header>
+<div id="wrapper">
+    <nav>
+        <ul id="myTopnav">
+            <li><a href="warriors.html">Warriors</a></li>
+            <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="specialists.html">Specialists</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Heroes of the Storm - Battlegrounds</h1>
+        <p>Each battleground match is designed to last roughly 20 minutes. This is to cut down on 'losing times' (as in, to minimize the time that a team is fighting a losing battle before being defeated if one side holds a clear advantage) and to allow shorter games to be played when a player only has a limited amount of time for one. <br /> <br />
+        Each battleground is set within the Nexus, and has mechanics and individuals unique to it.  A rotatoin system is intended for battlegrounds, and some maps may be retired.
+        </p>
+        <br />
+        <p class="subHead">Here is a list of the battlegrounds currently in the game.</p>
+        
+        <div class="allMaps">
+            <div class="leftMap">
+                <img src="Resources/maps/bg_hanamura.jpg" class="bgImg"/>
+                <h3>HANAMURA</h3>
+                <p class="mapInfo">Capture payloads to unleash dragons and assail the enemy Core!</p>
+            </div>
+            
+            <div class="rightMap">
+                <img src="Resources/maps/bg_towers-of-doom.jpg" class="bgImg"/>
+                <h3>TOWERS OF DOOM</h3>
+                <p class="mapInfo">Control the Bell Towers, capture the Altars, and break through the enemy Core's impenetrable shield.</p>
+            </div>
+            
+            <div class="midMap">
+                <img src="Resources/maps/bg_haunted-mines.jpg" class="bgImg"/>
+                <h3>HAUNTED MINES</h3>
+                <p class="mapInfo">Engage in necromancy for fun and profit as you collect the skulls of the undead and use them to raise your very own grave golem.</p>
+            </div>
+            
+            <div class="leftMap">
+                <img src="Resources/maps/bg_infernal-shrines.jpg" class="bgImg"/>
+                <h3>INFERNAL SHRINES</h3>
+                <p class="mapInfo">A dark, destructive force threatens the Gardens of Hope, creatures made of equal parts mayhem and destruction. Harness their devastating might, or perish at the hands of the Punishers.</p>
+            </div>
+            
+            <div class="rightMap">
+                <img src="Resources/maps/bg_tomb-of-the-spider-queen.jpg" class="bgImg" />
+                <h3>TOMB OF THE SPIDER QUEEN</h3>
+                <p class="mapInfo">Slay your enemies and gather gems of magical power. Bring enough to the Spider Queen's altar, and her skittering Webweavers will devour your foes.</p>
+            </div>
+            
+            <div class="midMap">
+                <img src="Resources/maps/bg_battlefield-of-eternity.jpg" class="bgImg" />
+                <h3>BATTLEFIELD OF ETERNITY</h3>
+                <p class="mapInfo">Two Immortals are locked in a duel to the death. Help your Immortal prevail, and he'll devestate your enemy's forts.</p>
+            </div>
+            
+            <div class="leftMap">
+                <img src="Resources/maps/bg_sky-temple.jpg" class="bgImg"/>
+                <h3>SKY TEMPLE</h3>
+                <p class="mapInfo">Capture the ancient temples, defeat their guardians, and use their awesome power to destroy your enemy's forts.</p>
+            </div>
+            
+            <div class="rightMap">
+                <img src="Resources/maps/bg_blackhearts-bay.jpg" class="bgImg" />
+                <h3>BLACKHEART'S BAY</h3>
+                <p class="mapInfo">Collect doubloons and pay the ghost pirate Blackheart to turn his guns on your enemies. If you see a cannonball flying your way... run!</p>
+            </div>
+            
+            <div class="midMap">
+                <img src="Resources/maps/bg_garden-of-terror.jpg" class="bgImg" />
+                <h3>GARDEN OF TERROR</h3>
+                <p class="mapInfo">When night falls, horror sprouts in the Garden of Terror. Kill the terrors, collect their evil seeds, and let your green thumb bring victory!</p>
+            </div>
+            
+            <div class="leftMap">
+                <img src="Resources/maps/bg_dragon-shire.jpg" class="bgImg"/>
+                <h3>DRAGON SHIRE</h3>
+                <p class="mapInfo">He who controls the shrines controls the dragon; he who controls the dragon punts the other team's puny heroes.</p>
+            </div>
+            
+            <div class="rightMap">
+                <img src="Resources/maps/bg_braxis_holdout.jpg" class="bgImg" />
+                <h3>BRAXIS HOLDOUT</h3>
+                <p class="mapInfo">Capture the beacons and watch what happns when a flood of weaponized Zerg ravages the battlefield!</p>
+            </div>
+            
+            <div class="midMap">
+                <img src="Resources/maps/bg_cursed-hollow.jpg" class="bgImg" />
+                <h3>CURSED HOLLOW</h3>
+                <p class="mapInfo">It really is a horrible night to have a curse. Gather the Raven Lord's tribute and make sure it's the other team and not yours that has to suffer.</p>
+            </div>
+            
+            <div class="midMap">
+                <img src="Resources/maps/bg_warhead_junction.jpg" class="bgImg"/>
+                <h3>WARHEAD JUNCTION</h3>
+                <p class="mapInfo">Join the arms race of Warhead Junction, build up your stockpike, and rain hell on your enemies!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright Mighty Nexus</p>
+    </footer>
+</div>
+</body>
+</html>

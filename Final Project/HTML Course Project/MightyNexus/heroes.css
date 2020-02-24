@@ -1,0 +1,73 @@
+h3 {
+    font-family: CenturyGothic, sans-serif;
+    color: #e6005c;
+    text-align: left;
+    font-size: 1.8em;
+    padding: 0 0 -5px 15px;
+}
+
+p {
+    font-family: TimesNewRoman, serif;
+    color: black;
+    text-align: left;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
+
+.build th {
+    color: #e62e00;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.build td img{
+    display: block;
+    text-align: center;
+}
+
+.spell{
+    width: 90%;
+    height: 60p%;
+    margin-left: 4px;
+}
+
+
+@media screen and (max-width: 650px){
+    .modal-content p {
+        font-size: 0.6em;
+    }    
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    img {
+        float: none;
+        display: inline;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .build th {
+        font-size: 0.7em;
+    }
+}
+
+.hero {
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e6005c;
+}
+
+a:hover {
+    color: #0e355a;
+}
